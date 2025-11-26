@@ -1,0 +1,232 @@
+/* Reset e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #ffe6f8, #fff);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #ff8ecf, #ffb7e6);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 15px 40px rgba(255, 100, 180, 0.25);
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Logo moderna */
+.header .logo,
+.logo {
+    height: 85px;
+    border-radius: 22px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.07);
+    box-shadow: 0 14px 40px rgba(255, 120, 200, 0.35);
+}
+
+/* Textos do header */
+.header-text h1 {
+    font-size: 2.7em;
+    letter-spacing: -1px;
+}
+
+.header-text p {
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+/* ===== BENEFÍCIOS ===== */
+section.benefits {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+section.benefits h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ff66c4;
+    font-size: 2em;
+}
+
+.benefit-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.benefit {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    padding: 35px 28px;
+    flex: 1 1 260px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+    transition: .3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.benefit h3 {
+    color: #ff66c4;
+    margin-bottom: 14px;
+    font-size: 1.25em;
+}
+
+/* ===== CTA ===== */
+section.cta {
+    text-align: center;
+    margin: 80px 20px;
+}
+
+section.cta p {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #ff8ecf, #ff66c4);
+    color: white;
+    padding: 20px 45px;
+    border-radius: 50px;
+    font-size: 1.3em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 12px 30px rgba(255, 110, 190, 0.35);
+}
+
+.cta-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 18px 40px rgba(255, 110, 190, 0.5);
+}
+
+/* ===== ESTATÍSTICAS ===== */
+section.stats {
+    background: linear-gradient(135deg, #ffe3f5, #fff1fa);
+    padding: 70px 20px;
+    border-radius: 40px;
+    margin: 60px 20px;
+    box-shadow: 0 15px 40px rgba(255, 140, 210, 0.2);
+}
+
+section.stats h2 {
+    text-align: center;
+    color: #ff66c4;
+    margin-bottom: 45px;
+    font-size: 2em;
+}
+
+/* GRID moderno */
+.stat-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.stat {
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    padding: 40px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: .3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 50px rgba(0,0,0,0.15);
+}
+
+.stat h3 {
+    font-size: 2.4em;
+    color: #ff66c4;
+    margin-bottom: 12px;
+}
+
+.stat p {
+    font-size: 1.15em;
+    opacity: 0.8;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .stat-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .stat-list {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+}
+
+/* ===== GARANTIA ===== */
+section.guarantee {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 50px 25px;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(14px);
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.07);
+}
+
+section.guarantee h2 {
+    color: #ff66c4;
+    font-size: 2em;
+    margin-bottom: 22px;
+}
+
+section.guarantee p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-bottom: 12px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    font-size: 0.95em;
+    margin-top: 40px;
+    opacity: 0.9;
+}
