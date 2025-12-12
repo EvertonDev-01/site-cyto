@@ -1,7 +1,32 @@
-
-
-
-
-
-
-   
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flor</title>
+  <style>
+    /* Página limpa com a flor centralizada */
+    html,body { height:100%; margin:0; }
+    body {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: #ffffff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .flower {
+      width:60vmin;
+      height:60vmin;
+      max-width:600px;
+      max-height:600px;
+    }
+  </style>
+</head>
+<body>
+  <!-- SVG de uma flor simples (apenas imagem) -->
+  <!-- TROQUE AQUI PELO ARQUIVO LOCAL (ex: flor.jpg) -->
+  <img class="flower" src="flor.jpeg" alt="Flor" />
+  <!-- FIM DA ÁREA PARA TROCAR A IMAGEM -->
+</body>
+</html>
